@@ -2,7 +2,7 @@ organization := "org.i5y"
 
 name := "pipe"
 
-version := "0.0.1-SNAPSHOT"
+version := "0.0.1"
 
 scalacOptions += "-deprecation"
 
@@ -13,3 +13,6 @@ libraryDependencies ++= Seq(
         "com.typesafe" %% "scalalogging-slf4j" % "1.0.1"
     )
     
+seq(bintrayPublishSettings:_*)
+
+licenses += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0.html"))
